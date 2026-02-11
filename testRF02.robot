@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Suite Setup    Open Browser      
+Suite Setup    Open Browser To Login Page
 Suite Teardown    Close Browser
 
 *** Variables ***
@@ -14,4 +14,5 @@ Open Browser To Login Page
 
 *** Test Cases ***
 F01_1_TC1
-    Log    Browser opened
+    Log    Test started
+    

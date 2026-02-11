@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.4 on win32)" generated="2026-02-11T11:19:58.205352" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.12.4 on win32)" generated="2026-02-11T11:47:26.493797" rpa="false" schemaversion="5">
 <suite id="s1" name="testRF02" source="D:\downloads\Software-Testing-_Quiz02\testRF02.robot">
-<kw name="Open Browser" type="SETUP">
-<msg time="2026-02-11T11:19:58.274643" level="FAIL">No keyword with name 'Open Browser' found.</msg>
-<arg>https://reg.up.ac.th/</arg>
-<status status="FAIL" start="2026-02-11T11:19:58.274643" elapsed="0.000000">No keyword with name 'Open Browser' found.</status>
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-11T11:47:27.065046" level="INFO">Opening browser 'chrome' to base url 'https://reg.up.ac.th/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-11T11:47:27.063515" elapsed="4.922637"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-11T11:47:31.986152" elapsed="0.067131"/>
+</kw>
+<status status="PASS" start="2026-02-11T11:47:27.062515" elapsed="4.990768"/>
 </kw>
 <test id="s1-t1" name="F01_1_TC1" line="16">
-<status status="FAIL" start="2026-02-11T11:19:58.274643" elapsed="0.000845">Parent suite setup failed:
-No keyword with name 'Open Browser' found.</status>
-</test>
-<kw name="Close Browser" type="TEARDOWN">
-<msg time="2026-02-11T11:19:58.276984" level="FAIL">No keyword with name 'Close Browser' found.</msg>
-<status status="FAIL" start="2026-02-11T11:19:58.276984" elapsed="0.000000">No keyword with name 'Close Browser' found.</status>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-11T11:47:32.055283" level="INFO">Test started</msg>
+<arg>Test started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-11T11:47:32.054286" elapsed="0.000997"/>
 </kw>
-<status status="FAIL" start="2026-02-11T11:19:58.207433" elapsed="0.069551">Suite setup failed:
-No keyword with name 'Open Browser' found.
-
-Also suite teardown failed:
-No keyword with name 'Close Browser' found.</status>
+<status status="PASS" start="2026-02-11T11:47:32.053283" elapsed="0.002999"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-11T11:47:32.057282" elapsed="2.281005"/>
+</kw>
+<status status="PASS" start="2026-02-11T11:47:26.495994" elapsed="7.843346"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="testRF02" id="s1" pass="0" fail="1" skip="0">testRF02</stat>
+<stat name="testRF02" id="s1" pass="1" fail="0" skip="0">testRF02</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-02-11T11:19:58.271323" level="ERROR">Error in file 'D:\downloads\Software-Testing-_Quiz02\testRF02.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  D:\downloads\Software-Testing-_Quiz02\.venv\Scripts\robot.exe
-  C:\Users\riffe\scoop\apps\python\3.12.4\python312.zip
-  C:\Users\riffe\scoop\apps\python\3.12.4\DLLs
-  C:\Users\riffe\scoop\apps\python\3.12.4\Lib
-  C:\Users\riffe\scoop\apps\python\3.12.4
-  D:\downloads\Software-Testing-_Quiz02\.venv
-  D:\downloads\Software-Testing-_Quiz02\.venv\Lib\site-packages</msg>
 </errors>
 </robot>
